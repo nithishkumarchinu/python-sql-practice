@@ -1,0 +1,35 @@
+1. Linear search
+arr=list(map(int,input().split()))
+k=int(input())
+print(arr.index(k) if k in arr else -1)
+2. Sum of array
+arr=list(map(int,input().split()))
+print(sum(arr))
+3. Count elements
+arr=list(map(int,input().split()))
+print(len(arr))
+4. Largest element
+arr=list(map(int,input().split()))
+print(max(arr))
+5. Smallest element
+arr=list(map(int,input().split()))
+print(min(arr))
+6. Search using while
+arr=list(map(int,input().split()))
+k=int(input());i=0
+while i<len(arr) and arr[i]!=k: i+=1
+print(i if i<len(arr) else -1)
+7. Replace element
+arr=list(map(int,input().split()))
+old,new=map(int,input().split())
+print([new if x==old else x for x in arr])
+8. Reverse array
+arr=list(map(int,input().split()))
+print(arr[::-1])
+9. Copy array
+arr=list(map(int,input().split()))
+b=arr[:]
+print(b)
+10. Check empty
+arr=list(map(int,input().split()))
+print(len(arr)==0)
