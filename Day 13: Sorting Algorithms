@@ -1,0 +1,43 @@
+1. Bubble sort
+arr=list(map(int,input().split()))
+for i in range(len(arr)):
+for j in range(len(arr)-1):
+if arr[j]>arr[j+1]: arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)
+2. Selection sort
+arr=list(map(int,input().split()))
+for i in range(len(arr)):
+m=i
+for j in range(i+1,len(arr)):
+if arr[j]<arr[m]: m=j
+arr[i],arr[m]=arr[m],arr[i]
+print(arr)
+3. Sort descending
+arr=list(map(int,input().split()))
+arr.sort(reverse=True)
+print(arr)
+4. Sort strings
+arr=input().split(); arr.sort(); print(arr)
+5. Count swaps
+arr=list(map(int,input().split()))
+c=0
+for i in range(len(arr)):
+for j in range(len(arr)-1):
+if arr[j]>arr[j+1]: arr[j],arr[j+1]=arr[j+1],arr[j]; c+=1
+print(c)
+6. Sorted check
+arr=list(map(int,input().split()))
+print(arr==sorted(arr))
+7. Merge lists
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+c=a+b; c.sort(); print(c)
+8. Reverse sort
+arr=list(map(int,input().split()))
+print(sorted(arr,reverse=True))
+9. Index after sort
+arr=list(map(int,input().split()))
+arr.sort(); print(arr.index(min(arr)))
+10. Partial sort
+arr=list(map(int,input().split()))
+print(sorted(arr[:3])+arr[3:])
