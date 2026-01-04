@@ -1,0 +1,18 @@
+# Student Result Analyzer
+students = {}
+def add_student():
+name = input("Name: ")
+marks = list(map(int, input("Enter 3 marks: ").split()))
+students[name] = marks
+def view_results():
+for s,m in students.items():
+print(s, "Average:", sum(m)/len(m))
+def main():
+while True:
+print("1.Add 2.View 3.Exit")
+ch = input()
+if ch=="1": add_student()
+elif ch=="2": view_results()
+elif ch=="3": break
+else: print("Invalid")
+main()
