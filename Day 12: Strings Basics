@@ -1,0 +1,20 @@
+1. Length of string
+s=input(); print(len(s))
+2. First char
+s=input(); print(s[0])
+3. Last char
+s=input(); print(s[-1])
+4. Count vowels
+s=input(); print(sum(1 for c in s if c in 'aeiouAEIOU'))
+5. Remove vowels
+s=input(); print('.join(c for c in s if c not in 'aeiouAEIOU'))
+6. Uppercase
+s=input(); print(s.upper())
+7. Lowercase
+s=input(); print(s.lower())
+8. Replace char
+s=input(); print(s.replace('a','@'))
+9. Word count
+s=input(); print(len(s.split()))
+10. Check alphabet
+s=input(); print(s.isalpha())
